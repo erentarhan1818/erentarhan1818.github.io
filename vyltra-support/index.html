@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vyltra Support</title>
+  <style>
+    :root {
+      --bg: #05070D;
+      --card: #0B1020;
+      --green: #39FF14;
+      --cyan: #7CF7FF;
+      --text: #EAF0FF;
+      --muted: #AAB5D6;
+      --border: rgba(124, 247, 255, 0.25);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(57, 255, 20, 0.18), transparent 32%),
+        radial-gradient(circle at bottom right, rgba(124, 247, 255, 0.14), transparent 34%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 42px 20px;
+    }
+
+    .card {
+      background: rgba(11, 16, 32, 0.94);
+      border: 1px solid var(--border);
+      border-radius: 26px;
+      padding: 34px;
+      box-shadow: 0 18px 55px rgba(0, 0, 0, 0.38);
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(57, 255, 20, 0.12);
+      border: 1px solid rgba(57, 255, 20, 0.28);
+      color: var(--green);
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      color: var(--green);
+      font-size: clamp(42px, 8vw, 76px);
+      line-height: 1;
+      letter-spacing: -1.5px;
+    }
+
+    h2 {
+      color: var(--cyan);
+      margin-top: 34px;
+      margin-bottom: 10px;
+      font-size: 26px;
+    }
+
+    p, li {
+      color: var(--text);
+      font-size: 18px;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    a {
+      color: var(--cyan);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .info-box {
+      margin-top: 18px;
+      padding: 18px;
+      border-radius: 18px;
+      background: rgba(124, 247, 255, 0.07);
+      border: 1px solid rgba(124, 247, 255, 0.16);
+    }
+
+    .footer {
+      margin-top: 34px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 24px 14px;
+      }
+
+      .card {
+        padding: 24px;
+        border-radius: 22px;
+      }
+
+      p, li {
+        font-size: 16px;
+      }
+
+      h2 {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <div class="badge">Official Support</div>
+
+      <h1>Vyltra Support</h1>
+
+      <p class="muted">
+        Welcome to the official support page for Vyltra.
+      </p>
+
+      <div class="info-box">
+        <p>
+          If you need help, want to report a bug, or have feedback about Vyltra,
+          please contact us by email.
+        </p>
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:eren18tarhan@gmail.com">eren18tarhan@gmail.com</a>
+        </p>
+      </div>
+
+      <h2>About Vyltra</h2>
+      <p>
+        Vyltra is a fast-paced mobile arcade game where players avoid obstacles,
+        collect rewards, unlock visual items, and try to reach the highest score.
+      </p>
+
+      <h2>Common Support Topics</h2>
+      <ul>
+        <li>Gameplay questions</li>
+        <li>Bug reports</li>
+        <li>Advertisement or reward issues</li>
+        <li>Privacy and data questions</li>
+        <li>General feedback</li>
+      </ul>
+
+      <h2>Privacy Policy</h2>
+      <p>
+        You can view the Vyltra Privacy Policy here:
+        <a href="https://erentarhan1818.github.io/neondash-privacy/" target="_blank" rel="noopener noreferrer">
+          Vyltra Privacy Policy
+        </a>
+      </p>
+
+      <h2>Developer</h2>
+      <p>
+        Developer: Eren Tarhan
+      </p>
+
+      <p class="footer">
+        We usually respond to support requests as soon as possible.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
