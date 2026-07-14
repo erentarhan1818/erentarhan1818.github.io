@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta
+    name="description"
+    content="Türkiye Adam Asmaca destek, yardım ve iletişim sayfası"
+  />
+
+  <title>Destek | Türkiye Adam Asmaca</title>
+
+  <style>
+    :root {
+      --primary: #d60b2f;
+      --primary-dark: #a80725;
+      --background: #f7f7f9;
+      --surface: #ffffff;
+      --text: #172033;
+      --muted: #697386;
+      --border: #e8e9ee;
+      --soft-red: #fff1f4;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top right, rgba(214, 11, 47, 0.09), transparent 30%),
+        linear-gradient(180deg, #ffffff 0%, var(--background) 100%);
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--primary);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      min-height: 380px;
+      padding: 64px 20px 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      background:
+        linear-gradient(145deg, rgba(255, 255, 255, 0.08), transparent 42%),
+        linear-gradient(135deg, #e80c38 0%, #b40729 100%);
+    }
+
+    .hero-content {
+      width: min(760px, 100%);
+    }
+
+    .logo {
+      width: 92px;
+      height: 92px;
+      margin: 0 auto 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 26px;
+      background: white;
+      color: var(--primary);
+      font-size: 44px;
+      font-weight: 900;
+      box-shadow: 0 20px 45px rgba(60, 0, 14, 0.28);
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: clamp(36px, 7vw, 58px);
+      line-height: 1.1;
+      letter-spacing: -1.5px;
+    }
+
+    .hero p {
+      max-width: 620px;
+      margin: 18px auto 0;
+      font-size: 18px;
+      opacity: 0.92;
+    }
+
+    .container {
+      width: min(940px, calc(100% - 32px));
+      margin: -42px auto 60px;
+      position: relative;
+    }
+
+    .card {
+      margin-bottom: 20px;
+      padding: 30px;
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      background: var(--surface);
+      box-shadow: 0 16px 45px rgba(28, 34, 48, 0.08);
+    }
+
+    .intro {
+      text-align: center;
+    }
+
+    .intro h2 {
+      margin: 0 0 10px;
+      font-size: 28px;
+    }
+
+    .intro p {
+      max-width: 700px;
+      margin: 0 auto;
+      color: var(--muted);
+    }
+
+    h2 {
+      margin-top: 0;
+      color: var(--primary-dark);
+      font-size: 25px;
+    }
+
+    h3 {
+      margin-bottom: 6px;
+      font-size: 18px;
+    }
+
+    p {
+      margin-top: 0;
+    }
+
+    .faq-item {
+      padding: 18px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .faq-item:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .faq-item p {
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+
+    .contact-box {
+      padding: 22px;
+      border-radius: 18px;
+      background: var(--soft-red);
+      border: 1px solid #ffd4dc;
+    }
+
+    .contact-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 52px;
+      margin-top: 10px;
+      padding: 0 24px;
+      border-radius: 15px;
+      color: white;
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      box-shadow: 0 12px 25px rgba(214, 11, 47, 0.22);
+    }
+
+    .links {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .link-card {
+      padding: 22px;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: #fafafd;
+    }
+
+    .link-card strong {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 18px;
+    }
+
+    .link-card span {
+      color: var(--muted);
+    }
+
+    footer {
+      padding: 10px 20px 42px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 14px;
+    }
+
+    @media (max-width: 680px) {
+      .hero {
+        min-height: 340px;
+        padding-top: 50px;
+      }
+
+      .container {
+        margin-top: -30px;
+      }
+
+      .card {
+        padding: 22px;
+        border-radius: 20px;
+      }
+
+      .links {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <div class="logo" aria-hidden="true">T</div>
+
+      <h1>Türkiye Adam Asmaca</h1>
+
+      <p>
+        Yardım, destek, sık sorulan sorular ve geliştiriciyle iletişim.
+      </p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card intro">
+      <h2>Nasıl yardımcı olabiliriz?</h2>
+
+      <p>
+        Oyunla ilgili bir sorun yaşıyorsanız aşağıdaki sık sorulan
+        soruları inceleyebilir veya doğrudan geliştiriciyle iletişime
+        geçebilirsiniz.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Sık Sorulan Sorular</h2>
+
+      <div class="faq-item">
+        <h3>Oyun ilerlemem nerede saklanıyor?</h3>
+
+        <p>
+          Seviye, coin, istatistikler, tema seçimleri ve oynanan kelimeler
+          cihazınızın yerel depolama alanında saklanır. Çevrim içi kullanıcı
+          hesabı veya sunucu tabanlı veritabanı kullanılmaz.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Uygulamayı silersem ilerlemem kaybolur mu?</h3>
+
+        <p>
+          Evet. Veriler yalnızca cihazda tutulduğu için uygulama silindiğinde
+          oyun ilerlemesi de silinebilir.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>İnternet bağlantısı gerekli mi?</h3>
+
+        <p>
+          Oyunun temel kelime ve ilerleme özellikleri çevrim dışı
+          kullanılabilir. Reklamlar veya mağazaya bağlı bazı hizmetler için
+          internet bağlantısı gerekebilir.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Yanlış veya hatalı bir kelime buldum. Ne yapmalıyım?</h3>
+
+        <p>
+          Kelimenin adını, kategorisini ve mümkünse ekran görüntüsünü
+          geliştirici e-posta adresine gönderebilirsiniz. Hatalı içerikler
+          sonraki güncellemelerde düzeltilecektir.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Coin veya günlük ödül neden görünmedi?</h3>
+
+        <p>
+          Uygulamayı tamamen kapatıp yeniden açmayı deneyin. Sorun devam
+          ederse cihaz modelinizi ve uygulama sürümünü destek e-postasına
+          iletin.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Bir özelliği önermek istiyorum.</h3>
+
+        <p>
+          Yeni kategori, kelime, tema veya oyun özelliği önerilerinizi
+          aşağıdaki iletişim adresine gönderebilirsiniz.
+        </p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>İletişim ve Teknik Destek</h2>
+
+      <div class="contact-box">
+        <p>
+          Destek talebinizde mümkünse şu bilgileri ekleyin:
+        </p>
+
+        <ul>
+          <li>Yaşadığınız sorunun kısa açıklaması</li>
+          <li>Telefon modeli</li>
+          <li>iOS veya Android sürümü</li>
+          <li>Uygulama sürümü</li>
+          <li>Varsa ekran görüntüsü</li>
+        </ul>
+
+        <p>
+          <strong>Geliştirici:</strong> Eren Tarhan
+          <br />
+          <strong>Destek e-postası:</strong>
+          <a href="mailto:eren18tarhan@gmail.com">
+            eren18tarhan@gmail.com
+          </a>
+        </p>
+
+        <a
+          class="contact-button"
+          href="mailto:eren18tarhan@gmail.comZ?subject=Türkiye%20Adam%20Asmaca%20Destek"
+        >
+          E-posta ile destek al
+        </a>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Bağlantılar</h2>
+
+      <div class="links">
+        <a
+          class="link-card"
+          href="https://erentarhan1818.github.io/turkiye-adam-asmaca-privacy/"
+        >
+          <strong>Gizlilik Politikası</strong>
+          <span>Verilerin nasıl işlendiğini inceleyin.</span>
+        </a>
+
+        <a
+          class="link-card"
+          href="https://erentarhan1818.github.io/"
+        >
+          <strong>Geliştirici Sayfası</strong>
+          <span>Eren Tarhan tarafından geliştirilen projeleri görüntüleyin.</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Türkiye Adam Asmaca — Eren Tarhan
+  </footer>
+</body>
+</html>
